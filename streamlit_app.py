@@ -32,7 +32,7 @@ if st.button("Generate Prologue & Epilogue"):
         result = generate_epipro(name, genre, protagonist)
         r1,r2=result.split('Epilogue')
         st.info(r1)
-        dt.markdown('Epilogue:')
+        st.markdown('Epilogue:')
         st.info(r2)
     else:
         st.error("Please fill in all fields.")
